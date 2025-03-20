@@ -2,6 +2,15 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
+/* Learning about fork() and wait() in c/c++
+ * fork() is used to create parents and child process
+ * wait() blocks calling process until a child process is finished executing.
+ * so we have main process and child process and then the parent process
+ * wait tells the main process to stop until child process is complete.
+ * and then the parent process continues.
+ *
+ */
+
 int main() {
     int id = fork();
     int n;
